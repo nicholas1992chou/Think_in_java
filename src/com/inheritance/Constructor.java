@@ -34,7 +34,7 @@ class Derivedclass extends Baseclass{
 		System.out.println("the constructor of derived class with no args");
 	}
 	Derivedclass(int num){
-		//super();derived class 的每个constructor都会隐式调用base class的无参constructor；
+		//super();derived class 的每个constructor都会隐式调用superclass的无参constructor；
 		//构造器不能被继承，如果父类没有无参构造器，则必须明确调用父类的有参数构造器。
 		//通过super(num)调用父类构造器;通过super.field,super.methods调用父类的成员或者方法。
 		System.out.println(num);

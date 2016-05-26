@@ -28,7 +28,7 @@ public class Assign {
 		int a = 333;
 		int b = a;//此时是将a的值传递给了b，当a改变了，b不受影响。
 		
-		Integer c = 127;//-128-127
+		Integer c = 127;//-128---127
 		Integer d = 127;
 		System.out.println("c == d..."+ (c == d));//output: true
 		
