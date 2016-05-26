@@ -39,11 +39,11 @@ public class MyCalculator {
 					}
 					list.add(sb.toString());
 					
-				}else if(ch != ')' && ch != ']'){
+				}else if(ch != ')' && ch != ']' && ch != '}'){
 					//取出栈顶操作符 与 扫描的当前操作符比较 优先级，
 					//若栈顶元素优先级高，则出栈，存入集合.继续当前操作符与栈顶元素比较优先级
 					//直到当前操作符比栈顶元素优先级高，则压栈。
-					while(stack.peek() !='(' && stack.peek() != '[' && (!priority(stack.peek(), ch))){//如果栈顶优先级高
+					while(stack.peek() !='(' && stack.peek() != '[' &&stack.peek() != '{' && (!priority(stack.peek(), ch))){//如果栈顶优先级高
 						list.add(String.valueOf(stack.pop()));
 					}
 					stack.push(ch);
@@ -56,6 +56,13 @@ public class MyCalculator {
 					
 				}else if(ch == ']' ){
 					while(stack.peek() != '['){
+						list.add(String.valueOf(stack.pop()));
+					}
+					stack.pop();
+				
+				}
+				else if(ch == '}' ){
+					while(stack.peek() != '{'){
 						list.add(String.valueOf(stack.pop()));
 					}
 					stack.pop();
