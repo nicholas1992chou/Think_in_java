@@ -2,10 +2,10 @@ package com.initialization;
 
 public class Demo1 {
 	/*
-	 * ¾²Ì¬±äÁ¿Óë¾²Ì¬¿é ÔÚ¼ÓÔØÀàµÄÊ±ºò Ê×ÏÈ³õÊ¼»¯£¬ Á½Õß°´ÏÈºóË³Ğò£¬ ÇÒÖ»³õÊ¼»¯Ò»´Î¡£
-	 * ½Ó×ÅÊÇ ³ÉÔ±±äÁ¿ ³õÊ¼»¯ Ã»ÓĞÏÔÊ¾³õÊ¼»¯ ÔòÄ¬ÈÏ³õÊ¼
-	 * È»ºó ÊÇ¹¹Ôìº¯Êı ³õÊ¼»¯
-	 * ×îºó¹¹Ôì¿é
+	 * é™æ€å˜é‡ä¸é™æ€å— åœ¨åŠ è½½ç±»çš„æ—¶å€™ é¦–å…ˆåˆå§‹åŒ–ï¼Œ ä¸¤è€…æŒ‰å…ˆåé¡ºåºï¼Œ ä¸”åªåˆå§‹åŒ–ä¸€æ¬¡ã€‚
+	 * æ¥ç€æ˜¯ æˆå‘˜å˜é‡ åˆå§‹åŒ– æ²¡æœ‰æ˜¾ç¤ºåˆå§‹åŒ– åˆ™jvmåˆå§‹
+	 * ç„¶åæ‰§è¡Œ æ„é€ ä»£ç å—
+	 * æœ€åæ‰§è¡Œ  æ„é€ å‡½æ•°
 	 */
 	public static int k=0;  //step1
 	public static Demo1 t1=new Demo1("t1");  //step2 
@@ -15,11 +15,11 @@ public class Demo1 {
 	private int a=0;  //step3 t1.a=0; step14 t2.a=0;
 	public int j=print("j");  //step 4  return 1, t1.j = 1; step15 repeat step2-step14;
 	{  
-		print("¹¹Ôì¿é");  //step9
+		print("æ„é€ å—");  //step9
 	}  
 	static   
 	{  
-		print("¾²Ì¬¿é");  
+		print("é™æ€å—");  
 	}  
 	 public Demo1(String str)  
 	 {  
